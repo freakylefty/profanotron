@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Profanotron")]
+[assembly: AssemblyTitle("Acolyte")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Profanotron")]
+[assembly: AssemblyProduct("Acolyte")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7a20d1a5-4d42-4d9d-9069-68a032fdbdf2")]
+[assembly: Guid("e2c1d3f0-3a69-45d4-acac-d705116c8d32")]
 
 // Version information for an assembly consists of the following four values:
 //

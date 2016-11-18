@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profanotron", "Profanotron.csproj", "{7A20D1A5-4D42-4D9D-9069-68A032FDBDF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acolyte", "Acolyte\Acolyte.csproj", "{E2C1D3F0-3A69-45D4-ACAC-D705116C8D32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BileFountain", "BileFountain\BileFountain.csproj", "{4B7F23B8-0E22-40FF-8662-9E4014D61297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shitposter", "Shitposter\Shitposter.csproj", "{2A30B94A-DF79-4F77-BDBC-8441DCD75619}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A20D1A5-4D42-4D9D-9069-68A032FDBDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A20D1A5-4D42-4D9D-9069-68A032FDBDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A20D1A5-4D42-4D9D-9069-68A032FDBDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A20D1A5-4D42-4D9D-9069-68A032FDBDF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C1D3F0-3A69-45D4-ACAC-D705116C8D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C1D3F0-3A69-45D4-ACAC-D705116C8D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C1D3F0-3A69-45D4-ACAC-D705116C8D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C1D3F0-3A69-45D4-ACAC-D705116C8D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7F23B8-0E22-40FF-8662-9E4014D61297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7F23B8-0E22-40FF-8662-9E4014D61297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7F23B8-0E22-40FF-8662-9E4014D61297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7F23B8-0E22-40FF-8662-9E4014D61297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A30B94A-DF79-4F77-BDBC-8441DCD75619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A30B94A-DF79-4F77-BDBC-8441DCD75619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A30B94A-DF79-4F77-BDBC-8441DCD75619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A30B94A-DF79-4F77-BDBC-8441DCD75619}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

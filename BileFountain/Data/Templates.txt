@@ -1,0 +1,52 @@
+﻿#Openings
+!demand:%Verb% %possessive% %rudenoun%,
+!dismissal:%Dismissals%,
+#Basic
+!basic:<basic1|basic2|basic3|basic4|basic5>
+!basic1:%animal|mildnoun|rudenoun%-%verber|endnoun%
+!basic2:%rudenoun|mildnoun%-%verber|endnoun%
+!basic3:%animal%-%verber%
+!basic4:%animal% %rudenoun%
+!basic5:%verber% of %animal%*
+#Groups
+!group1:%you% %group% of %adjective?% 
+!group2:%you% %adjective?% %group% of 
+!group3:You %adjective?% 
+#Main bodies
+!main:<main1|main2|main3|main4>
+!main1:%animal|mildnoun%-%verbing% %rudenoun%-%endnoun|verber%
+!main2:%animal|mildnoun%-%verbing% %pile% %rudenoun%
+!main3:%animal|mildnoun%-%verbing% %pile% %rudenoun%*
+!main4:%pile% %animal|mildnoun%-%verbing% %rudenoun%-%endnoun%
+#Specials
+!container:%opinion% than a %container% of
+!comparison:<comparison1|comparison2|comparison3|comparison4>
+!comparison1:%emphasis%, you're <container>
+!comparison2:you're <container>
+!comparison3:you are, %emphasis%, <container>
+!comparison4:you are %emphasis% <container>
+!comparison5:you are <container>
+!comparator:<comparator1|comparator2>
+!comparator1:%animal|rudenoun%*
+!comparator2:%nounadjective% %singlenoun%
+!sucha:you're such a %adjective?% <main|basic>
+#Love
+!love:<love1|love2|love3|love4|love5>
+!love1:%emphasis%, <harshlove>
+!love2:<harshlove>
+!love3:<lovebase>
+!love4:<comparison> <comparator2>, <lovebase>
+!love5:<lovebase> <comparison>
+!lovebase:%restriction% %people% (could|would) %goodverb% you
+!harshlove:<harshlove1|harshlove2|harshlove3>
+!harshlove1:<lovebase>
+!harshlove2:<sucha> <lovebase>
+!harshlove3:<lovebase>, <sucha> 
+
+#Templates
+Basic:<Basic>
+Directed basic:%You% %adjective?% <basic>
+Group:*<Group1|Group2|Group3> <basic>
+Demand:<Demand|Dismissal> you %adjective?% <main>
+Comparison:<Comparison> <comparator>
+Love:<Love4>

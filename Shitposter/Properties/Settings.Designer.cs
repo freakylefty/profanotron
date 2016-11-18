@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Profanotron.Properties {
+namespace Shitposter.Properties {
 
 
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
