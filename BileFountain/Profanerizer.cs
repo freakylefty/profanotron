@@ -24,20 +24,27 @@ namespace BileFountain {
         }
 
         public string Profane(string name) {
+            return Profane(name, true);
+        }
+
+        public string Profane(string name, bool postProcess) {
             string result = null;
             string key = name.ToLower();
-            if (templates.ContainsKey(key)) {
-                result = templates[key];
-            }
-            else if (fragments.ContainsKey(key)) {
+            if (fragments.ContainsKey(key)) {
                 result = fragments[key];
+            }
+            else if (templates.ContainsKey(key)) {
+                result = templates[key];
             } else {
                 return "";
             }
             while (true) {
                 string token = getNextToken(result);
-                if (string.IsNullOrEmpty(token))
-                    return StringUtil.PostProcess(result);
+                if (string.IsNullOrEmpty(token)) {
+                    if (postProcess)
+                        result = StringUtil.PostProcess(result);
+                    return result;
+                }
                 Regex regex = new Regex(Regex.Escape(token));
                 result = regex.Replace(result, getWord(token), 1);
             }
@@ -62,7 +69,7 @@ namespace BileFountain {
                 listName = listName.Replace("?", "");
             }
             if (isFragment)
-                return StringUtil.MatchCase(listName, Profane(listName));
+                return Profane("!" + listName, false);
             listName = listName.Replace("*", "");
             string key = listName.ToLower();
             if (!words.ContainsKey(key)) {
@@ -70,7 +77,7 @@ namespace BileFountain {
             }
             int index = random.Next(words[key].Count);
             string result = words[key][index];
-            return StringUtil.MatchCase(listName, result);
+            return result;
         }
 
         private string getTextChoice(string[] values) {

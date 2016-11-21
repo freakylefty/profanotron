@@ -2,6 +2,7 @@
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Reflection;
+using System;
 
 namespace BileFountain.Utils {
 
@@ -30,10 +31,10 @@ namespace BileFountain.Utils {
         }
 
         public static Dictionary<string, string> LoadTemplates() {
-            Dictionary<string, string> templates = new Dictionary<string, string>();
+            Dictionary<string, string> templates = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             List<string> lines = readFile(@"Templates");
 
-            Regex regex = new Regex("^[^!]([^:]+):(.+)$");
+            Regex regex = new Regex("^([^!][^:]+):(.+)$");
             foreach (string line in lines) {
                 Match match = regex.Match(line);
                 if (match.Groups.Count == 3) {
@@ -47,11 +48,11 @@ namespace BileFountain.Utils {
             Dictionary<string, string> templates = new Dictionary<string, string>();
             List<string> lines = readFile(@"Templates");
 
-            Regex regex = new Regex("^!([^:]+):(.+)$");
+            Regex regex = new Regex("^(![^:]+):(.+)$");
             foreach (string line in lines) {
                 Match match = regex.Match(line);
                 if (match.Groups.Count == 3) {
-                    templates[match.Groups[1].Value] = match.Groups[2].Value;
+                    templates[match.Groups[1].Value.ToLower()] = match.Groups[2].Value;
                 }
             }
             return templates;
@@ -67,7 +68,7 @@ namespace BileFountain.Utils {
                 if (string.IsNullOrEmpty(line) || line.Equals(":"))
                     continue;
                 if (line.EndsWith(":")) {
-                    group = line.Substring(0, line.Length - 1);
+                    group = line.Substring(0, line.Length - 1).ToLower();
                     words[group] = new List<string>();
                     continue;
                 }

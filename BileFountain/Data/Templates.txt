@@ -2,12 +2,13 @@
 !demand:%Verb% %possessive% %rudenoun%,
 !dismissal:%Dismissals%,
 #Basic
-!basic:<basic1|basic2|basic3|basic4|basic5>
+!basic:<basic1|basic2|basic3|basic4|basic5|basic6>
 !basic1:%animal|mildnoun|rudenoun%-%verber|endnoun%
 !basic2:%rudenoun|mildnoun%-%verber|endnoun%
 !basic3:%animal%-%verber%
 !basic4:%animal% %rudenoun%
 !basic5:%verber% of %animal%*
+!basic6:%animal% %singlenoun%
 #Groups
 !group1:%you% %group% of %adjective?% 
 !group2:%you% %adjective?% %group% of 
@@ -42,6 +43,12 @@
 !harshlove1:<lovebase>
 !harshlove2:<sucha> <lovebase>
 !harshlove3:<lovebase>, <sucha> 
+#MicDrop
+!micdrop:<mic1|mic2|mic3|mic4>
+!mic1:<Basic>. %Saidit%.
+!mic2:%Adjective% <basic>. %Saidit%.
+!mic3:%You% %adjective?% <basic>. %Saidit%.
+!mic4:You. <Basic>.
 
 #Templates
 Basic:<Basic>
@@ -50,3 +57,5 @@ Group:*<Group1|Group2|Group3> <basic>
 Demand:<Demand|Dismissal> you %adjective?% <main>
 Comparison:<Comparison> <comparator>
 Love:<Love4>
+Nobody:%Nobody% %such% <basic> %asyou%~
+MicDrop:<Micdrop>

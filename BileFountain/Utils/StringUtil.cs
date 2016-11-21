@@ -12,16 +12,39 @@ namespace BileFountain.Utils {
             value = regex3.Replace(value, " ");
             if (value.Contains("*")) {
                 value = value.Replace("*", "");
-                value = pluralize(value);
+                if (!value.Contains("~"))
+                    value = pluralize(value);
             }
-            return value.Trim();
+            value = value.Replace("~", "");
+            return UcFirstAll(value).Trim();
         }
 
        public static string UcFirst(string value) {
             return value[0].ToString().ToUpper() + value.Substring(1);
         }
 
-        public static string MatchCase(string source, string text) {
+        public static string UcFirstAll(string value) {
+            value = UcFirst(value);
+            bool isWaiting = false;
+            string result = "";
+            for (int index = 0; index < value.Length; index ++) {
+                string curr = value[index] + "";
+                if (isWaiting) {
+                    if (Regex.IsMatch(curr, "[a-zA-Z]")) {
+                        curr = curr.ToUpper();
+                        isWaiting = false;
+                    } else if (Regex.IsMatch(curr, "[0-9]")) {
+                        isWaiting = false;
+                    }
+                } else if (curr == ".") {
+                    isWaiting = true;
+                }
+                result += curr;
+            }
+            return result;
+        }
+
+        /*public static string MatchCase(string source, string text) {
             Regex allUpper = new Regex("^[A-Z]+$");
             if (allUpper.IsMatch(source))
                 return text.ToUpper();
@@ -29,7 +52,7 @@ namespace BileFountain.Utils {
             if (first.IsMatch(source))
                 return StringUtil.UcFirst(text);
             return text;
-        }
+        }*/
 
         private static string pluralize(string value) {
             if (string.IsNullOrEmpty(value))

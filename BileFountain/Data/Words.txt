@@ -3,6 +3,7 @@ seriously
 honestly
 really
 without a doubt
+for real
 
 dismissals:
 jog on
@@ -45,6 +46,7 @@ bag
 sack
 tub
 barrel
+bin
 
 adjective:
 sorry
@@ -57,6 +59,10 @@ absolute
 bloody
 gormless
 stupid
+colossal
+gigantic
+massive
+gargantuan
 
 nounadjective:
 warm
@@ -69,6 +75,7 @@ fetid
 frozen
 tepid
 stinky
+dirty
 
 singlenoun:
 cum
@@ -96,6 +103,7 @@ knob
 shit
 tit
 piss
+dong
 
 mildnoun:
 gusset
@@ -110,6 +118,10 @@ nose
 mouth
 rock
 brick
+sock
+puppet
+hair
+cactus
 
 animal:
 badger
@@ -124,6 +136,9 @@ dog
 puppy
 cat
 kitten
+pig
+hog
+pony
 
 verb:
 eat
@@ -149,6 +164,8 @@ hugger
 huffer
 bagger
 diver
+gargler
+worrier
 
 verbing:
 licking
@@ -166,6 +183,8 @@ hugging
 huffing
 bagging
 diving
+gargling
+worrying
 
 endnoun:
 stain
@@ -186,13 +205,41 @@ want
 desire
 love
 care about
+fuck
 
 people:
 Hitler
 4chan
 Reddit
 the Nazis
+your mum
+your mother
+yo momma
+Satan
+Jesus
+Trump
+the Devil
 
 restriction:
 not even
 only
+
+nobody:
+nobody's
+no-one's
+
+such:
+such a
+as big a
+as much of a 
+
+asyou:
+as you
+as you are
+
+saidit:
+That's you
+That's you that is
+There, I said it
+Peace
+So there
